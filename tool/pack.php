@@ -4,7 +4,7 @@ define('PLK_CURRENT_PATH', getcwd());
 define('PLK_APPLICATION_FILEPATH_ROOT', realpath(__DIR__.'/..'));
 
 
-$planckApplicationBootstrap = require(__DIR__.'/../bootsrap.php');
+$planckApplicationBootstrap = require(__DIR__.'/../bootstrap.php');
 
 if(!isset($argv[1])) {
     throw new Exception('You must specify an existing path for build');

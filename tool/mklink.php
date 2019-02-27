@@ -6,7 +6,7 @@ define('PLK_APPLICATION_FILEPATH_ROOT', realpath(__DIR__.'/..'));
 /**
  * @var PlanckApplicationBootstrap $planckApplicationBootstrap
  */
-$planckApplicationBootstrap = require(__DIR__.'/../bootsrap.php');
+$planckApplicationBootstrap = require(__DIR__.'/../bootstrap.php');
 $planckApplicationBootstrap->buildSymlinks();
 
 

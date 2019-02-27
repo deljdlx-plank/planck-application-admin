@@ -4,7 +4,7 @@ define('PLK_CURRENT_PATH', getcwd());
 define('PLK_APPLICATION_FILEPATH_ROOT', realpath(__DIR__));
 
 
-$planckApplicationBootstrap = require(__DIR__.'/bootsrap.php');
+$planckApplicationBootstrap = require(__DIR__.'/bootstrap.php');
 
 
 
