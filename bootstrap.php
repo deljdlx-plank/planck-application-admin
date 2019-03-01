@@ -10,6 +10,8 @@ else {
     throw new Exception('Can not load application bootstrap');
 }
 
+
+
 /**
  * @var PlanckApplicationBootstrap $planckApplicationBootstrap
  */
