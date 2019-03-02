@@ -1,13 +1,17 @@
 <?php
 
-if(is_file(__DIR__.'/__planckbootstrap/application-bootstrap.php')) {
-    $planckApplicationBootstrap = require(__DIR__.'/__planckbootstrap/application-bootstrap.php');
+
+
+if(is_file(__DIR__.'/static-vendor/planck/__planckbootstrap/application-bootstrap.php')) {
+    define('PHI_LIB_PATH', __DIR__.'/static-vendor/phi');
+    $planckApplicationBootstrap = require(__DIR__.'/static-vendor/planck/__planckbootstrap/application-bootstrap.php');
 }
-else if(is_file(__DIR__.'/../__shared/__planckbootstrap/application-bootstrap.php')){
-    $planckApplicationBootstrap = require(__DIR__.'/../__shared/__planckbootstrap/application-bootstrap.php');
+else if(is_file(__DIR__.'/../__shared/static-vendor/planck/__planckbootstrap/application-bootstrap.php')){
+    define('PHI_LIB_PATH', __DIR__.'/../__shared/static-vendor/phi');
+    $planckApplicationBootstrap = require(__DIR__.'/../__shared/static-vendor/planck/__planckbootstrap/application-bootstrap.php');
 }
 else {
-    throw new Exception('Can not load application bootstrap');
+    throw new Exception('Can not load Planck application bootstrap');
 }
 
 
