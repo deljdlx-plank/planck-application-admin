@@ -10,7 +10,7 @@ class Main extends \Planck\Extension\Bootstrap\Container\Main
 {
     public function initialize()
     {
-        $this->pathManager = \Phi\Core\VirtualPathManager::getInstance();
+        $this->pathManager = \Phi\VirtualFileSystem\Manager::getInstance();
 
         parent::initialize();
 
